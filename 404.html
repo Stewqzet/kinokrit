@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноКрит — 404 | Киновикторина</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ImageFolder/logo.ico" type="image/png">
+    <link rel="author" href="https://vk.com/stewqz">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo-link" title="На главную">
+                    <img src="ImageFolder/logo.png" alt="Логотип КиноКрит" class="logo-img" title="КиноКрит">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="dropdown"><a href="#">Фильмы</a>
+                        <div class="submenu"><a href="#">Все фильмы</a><a href="#">Новинки</a>
+                            <div class="dropdown-sub"><a href="#">По жанрам</a>
+                                <div class="submenu2"><a href="#">Боевики</a><a href="#">Драмы</a><a href="#">Комедии</a><a href="#">Фантастика</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#">Критики</a>
+                        <div class="submenu"><a href="#">Все критики</a><a href="#">Топ критиков</a><a href="#">Стать критиком</a></div>
+                    </li>
+                    <li><a href="#">Обзоры</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск" class="search-input">
+                    <button class="search-btn"><img src="ImageFolder/search.png" alt="Поиск" width="20" height="20"></button>
+                </div>
+                <a href="#" class="login-btn">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            
+            <div class="error-block">
+                <div class="error-code">404</div>
+                <div class="error-joke">"Тарковский бы назвал это "атмосферой". А мы — 404"</div>
+                <div class="error-text">Киновикторина</div>
+                <div class="gold-lines">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <input type="radio" name="step" id="s1" class="quiz-radio" checked>
+            <input type="radio" name="step" id="s2" class="quiz-radio">
+            <input type="radio" name="step" id="s3" class="quiz-radio">
+            <input type="radio" name="step" id="s4" class="quiz-radio">
+            <input type="radio" name="step" id="s5" class="quiz-radio">
+            <input type="radio" name="step" id="s6" class="quiz-radio">
+            <input type="radio" name="step" id="s7" class="quiz-radio">
+            <input type="radio" name="step" id="s8" class="quiz-radio">
+            <input type="radio" name="step" id="s9" class="quiz-radio">
+            <input type="radio" name="step" id="s10" class="quiz-radio">
+            <input type="radio" name="step" id="final" class="quiz-radio">
+
+            <div class="quiz-container">
+                <div class="progress-wrapper">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <div class="quiz-stage q1-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 1 из 10</span></div>
+                        <div class="question-title">Кто снял фильм «Начало» (Inception)?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q1" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q1')"> Дэвид Финчер</label>
+                            <label class="answer-label"><input type="radio" name="q1" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q1')"> Кристофер Нолан</label>
+                            <label class="answer-label"><input type="radio" name="q1" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q1')"> Квентин Тарантино</label>
+                            <label class="answer-label"><input type="radio" name="q1" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q1')"> Дени Вильнёв</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s2" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q2-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 2 из 10</span></div>
+                        <div class="question-title">Кто сыграл главную роль в «Форрест Гамп»?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q2" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q2')"> Брэд Питт</label>
+                            <label class="answer-label"><input type="radio" name="q2" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q2')"> Том Хэнкс</label>
+                            <label class="answer-label"><input type="radio" name="q2" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q2')"> Леонардо ДиКаприо</label>
+                            <label class="answer-label"><input type="radio" name="q2" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q2')"> Мэтт Дэймон</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s3" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q3-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 3 из 10</span></div>
+                        <div class="question-title">Какой фильм получил «Оскар» как лучший в 2020 году?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q3" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q3')"> Паразиты</label>
+                            <label class="answer-label"><input type="radio" name="q3" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q3')"> 1917</label>
+                            <label class="answer-label"><input type="radio" name="q3" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q3')"> Джокер</label>
+                            <label class="answer-label"><input type="radio" name="q3" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q3')"> Ирландец</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s4" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q4-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 4 из 10</span></div>
+                        <div class="question-title">Как звали персонажа Леонардо ДиКаприо в фильме «Титаник»?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q4" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q4')"> Джек</label>
+                            <label class="answer-label"><input type="radio" name="q4" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q4')"> Томми</label>
+                            <label class="answer-label"><input type="radio" name="q4" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q4')"> Кайл</label>
+                            <label class="answer-label"><input type="radio" name="q4" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q4')"> Роуз</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s5" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q5-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 5 из 10</span></div>
+                        <div class="question-title">В каком году вышел фильм «Матрица»?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q5" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q5')"> 1997</label>
+                            <label class="answer-label"><input type="radio" name="q5" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q5')"> 1998</label>
+                            <label class="answer-label"><input type="radio" name="q5" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q5')"> 1999</label>
+                            <label class="answer-label"><input type="radio" name="q5" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q5')"> 2000</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s6" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q6-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 6 из 10</span></div>
+                        <div class="question-title">Кто сыграл Джокера в фильме «Тёмный рыцарь»?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q6" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q6')"> Хоакин Феникс</label>
+                            <label class="answer-label"><input type="radio" name="q6" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q6')"> Хит Леджер</label>
+                            <label class="answer-label"><input type="radio" name="q6" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q6')"> Джаред Лето</label>
+                            <label class="answer-label"><input type="radio" name="q6" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q6')"> Джеффри Раш</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s7" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q7-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 7 из 10</span></div>
+                        <div class="question-title">Как называется фильм Квентина Тарантино про Гитлера?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q7" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q7')"> Криминальное чтиво</label>
+                            <label class="answer-label"><input type="radio" name="q7" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q7')"> Убить Билла</label>
+                            <label class="answer-label"><input type="radio" name="q7" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q7')"> Бесславные ублюдки</label>
+                            <label class="answer-label"><input type="radio" name="q7" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q7')"> Джанго освобождённый</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s8" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q8-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 8 из 10</span></div>
+                        <div class="question-title">Кто режиссёр фильма «Сияние»?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q8" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q8')"> Альфред Хичкок</label>
+                            <label class="answer-label"><input type="radio" name="q8" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q8')"> Стэнли Кубрик</label>
+                            <label class="answer-label"><input type="radio" name="q8" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q8')"> Мартин Скорсезе</label>
+                            <label class="answer-label"><input type="radio" name="q8" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q8')"> Роман Полански</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s9" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q9-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 9 из 10</span></div>
+                        <div class="question-title">Какой фильм собрал больше всего денег в прокате (самый кассовый)?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q9" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q9')"> Титаник</label>
+                            <label class="answer-label"><input type="radio" name="q9" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q9')"> Аватар</label>
+                            <label class="answer-label"><input type="radio" name="q9" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q9')"> Мстители: Финал</label>
+                            <label class="answer-label"><input type="radio" name="q9" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q9')"> Форсаж 7</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="s10" class="next-btn">Далее →</label></div>
+                </div>
+
+                <div class="quiz-stage q10-content">
+                    <div class="question-card">
+                        <div class="question-header"><span class="question-counter">Вопрос 10 из 10</span></div>
+                        <div class="question-title">Кто сыграл роль Гэндальфа во «Властелине колец»?</div>
+                        <div class="answers">
+                            <label class="answer-label"><input type="radio" name="q10" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q10')"> Кристофер Ли</label>
+                            <label class="answer-label"><input type="radio" name="q10" class="answer-radio" value="correct" onchange="highlightAnswer(this, true, 'q10')"> Иэн Маккеллен</label>
+                            <label class="answer-label"><input type="radio" name="q10" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q10')"> Шон Бин</label>
+                            <label class="answer-label"><input type="radio" name="q10" class="answer-radio" value="wrong" onchange="highlightAnswer(this, false, 'q10')"> Орландо Блум</label>
+                        </div>
+                    </div>
+                    <div class="next-wrapper"><label for="final" class="next-btn">Завершить →</label></div>
+                </div>
+
+                <div class="quiz-stage final-content">
+                    <div style="text-align: center; padding: 20px;">
+                        <div style="font-size: 24px; font-weight: 600; color: #f5a623; margin-bottom: 20px;">🎉 ВИКТОРИНА ЗАВЕРШЕНА! 🎉</div>
+                        <div class="final-result-card">
+                            <div class="final-score" id="finalResult">0 / 10</div>
+                            <div class="final-divider"></div>
+                            <div class="final-verdict" id="finalVerdict"></div>
+                        </div>
+                        <a href="index.html" class="return-btn">◀ Вернуться в кинозал</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+      <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-col">
+                    <h4>КиноКрит</h4>
+                    <p>Рецензии до и после просмотра</p>
+                    <p>© 2026 Марк Грицев</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="404.html">Фильмы</a></li>
+                        <li><a href="404.html">Критики</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                    </ul>
+                </div>
+                   <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="aboutme.html">О разработчике</a></li>
+                        <li><a href="confid.html">Политика конфиденциальности</a></li>
+                        <li><a href="sitemap.html">Карта сайта</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📧 markgritsev8@gmail.com</p>
+                    <p>📞 +375 (25) 516-88-28</p>
+                    <p><a href="https://www.bartc.by">Официальный сайт БТК</a></p>
+                </div>
+            </div>
+        </footer>
+</div>
+
+<script>
+    function calculateScore() {
+        let score = 0;
+        const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'];
+        questions.forEach(q => {
+            const selected = document.querySelector(`input[name="${q}"]:checked`);
+            if (selected && selected.value === 'correct') score++;
+        });
+        return score;
+    }
+
+    const finalRadio = document.getElementById('final');
+    finalRadio.addEventListener('change', function() {
+        const score = calculateScore();
+        const finalResultDiv = document.getElementById('finalResult');
+        const finalVerdictDiv = document.getElementById('finalVerdict');
+        finalResultDiv.innerText = `${score} / 10`;
+        
+        let verdict = '';
+        if (score <= 3) verdict = '🎬 Начинающий зритель. Пора навёрстывать киноклассику!';
+        else if (score <= 6) verdict = '🍿 Крепкий середняк. Вы знаете основы, но есть куда расти.';
+        else if (score <= 8) verdict = '⭐ Киноман! Ваши друзья точно спрашивают у вас совета.';
+        else verdict = '🏆 ГЕНИЙ КИНО! Вы пересмотрели больше фильмов, чем мы успели выпустить рецензий.';
+        
+        finalVerdictDiv.innerHTML = verdict;
+    });
+
+    function highlightAnswer(radioElement, isCorrect, questionId) {
+        const parentAnswers = radioElement.closest('.answers');
+        const allLabels = parentAnswers.querySelectorAll('.answer-label');
+        
+        allLabels.forEach(label => {
+            label.classList.remove('correct-highlight', 'wrong-highlight');
+        });
+        
+        const selectedLabel = radioElement.closest('.answer-label');
+        if (isCorrect) {
+            selectedLabel.classList.add('correct-highlight');
+        } else {
+            selectedLabel.classList.add('wrong-highlight');
+            allLabels.forEach(label => {
+                const radio = label.querySelector('.answer-radio');
+                if (radio && radio.value === 'correct') {
+                    label.classList.add('correct-highlight');
+                }
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

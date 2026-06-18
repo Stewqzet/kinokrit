@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноКрит — каталог фильмов - Марк Грицев</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ImageFolder/logo.ico" type="image/png">
+    <link rel="author" href="https://vk.com/stewqz">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container header-container">
+            
+            
+<div class="burger-dropdown">
+    <input type="checkbox" id="burgerToggle" class="burger-toggle">
+    <label for="burgerToggle" class="burger-btn">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </label>
+    
+    <div class="burger-menu">
+        <div class="burger-menu-header">
+            <span class="burger-menu-title">Навигация</span>
+            <label for="burgerToggle" class="burger-menu-close">&times;</label>
+        </div>
+        <div class="burger-menu-grid">
+            <a href="index.html">Главная</a>
+            <a href="404.html">Все фильмы</a>
+            <a href="404.html">Новинки</a>
+            
+            
+            <div class="burger-dropdown-sub">
+                <span class="burger-parent">По жанрам ▼</span>
+                <div class="burger-submenu">
+                    <a href="404.html">Боевики</a>
+                    <a href="404.html">Драмы</a>
+                    <a href="404.html">Комедии</a>
+                    <a href="404.html">Фантастика</a>
+                    <a href="404.html">Триллеры</a>
+                </div>
+            </div>
+            
+            
+            <div class="burger-dropdown-sub">
+                <span class="burger-parent">По году ▼</span>
+                <div class="burger-submenu">
+                    <a href="404.html">2023-2025</a>
+                    <a href="404.html">2010-2022</a>
+                    <a href="404.html">2000-2009</a>
+                    <a href="404.html">1990-1999</a>
+                </div>
+            </div>
+            
+            <a href="404.html">Критики</a>
+            <a href="404.html">Топ критиков</a>
+            <a href="404.html">Обзоры</a>
+            <a href="gallery.html">Галерея</a>
+        </div>
+    </div>
+</div>
+            
+            <div class="logo-area">
+                <a href="index.html" class="logo-link">
+                    <img src="ImageFolder/logo.png" alt="Логотип КиноКрит" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li class="dropdown">
+                        <a href="404.html">Фильмы</a>
+                        <div class="submenu">
+                            <a href="404.html">Все фильмы</a>
+                            <a href="404.html">Новинки</a>
+                            <div class="dropdown-sub">
+                                <a href="404.html">По жанрам</a>
+                                <div class="submenu2">
+                                    <a href="404.html">Боевики</a>
+                                    <a href="404.html">Драмы</a>
+                                    <a href="404.html">Комедии</a>
+                                    <a href="404.html">Фантастика</a>
+                                    <a href="404.html">Триллеры</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-sub">
+                                <a href="404.html">По году</a>
+                                <div class="submenu2">
+                                    <a href="404.html">2023-2025</a>
+                                    <a href="404.html">2010-2022</a>
+                                    <a href="404.html">2000-2009</a>
+                                    <a href="404.html">1990-1999</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="404.html">Критики</a>
+                        <div class="submenu">
+                            <a href="404.html">Все критики</a>
+                            <a href="404.html">Топ критиков</a>
+                            <a href="404.html">Стать критиком</a>
+                        </div>
+                    </li>
+                    <li><a href="404.html">Обзоры</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+    <div class="search-box">
+        <input type="text" placeholder="Поиск" class="search-input">
+        <button class="search-btn">
+            <img src="ImageFolder/search.png" alt="Поиск" width="20" height="20">
+        </button>
+    </div>
+    
+<label for="authModalToggle" class="profile-btn">
+    <svg class="profile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+    </svg>
+    <span>Профиль</span>
+</label>
+</div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="container">
+            <div class="carousel-wrapper">
+                <h2 class="section-title">Лучшие фильмы</h2>
+                
+                <input type="radio" name="carousel" id="slide1" class="carousel-radio" checked>
+                <input type="radio" name="carousel" id="slide2" class="carousel-radio">
+                <input type="radio" name="carousel" id="slide3" class="carousel-radio">
+                <input type="radio" name="carousel" id="slide4" class="carousel-radio">
+                <input type="radio" name="carousel" id="slide5" class="carousel-radio">
+                
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <div class="featured-card">
+                                <div class="featured-poster"><img src="ImageFolder/dune.jpg" alt="Постер фильма Дюна: Часть вторая"></div>
+                                <div class="featured-info">
+                                    <h3>Дюна: Часть вторая</h3>
+                                    <div class="featured-meta">2024 | Дени Вильнёв | Фантастика</div>
+                                    <div class="featured-rating">★ 8.9</div>
+                                    <p>Эпическое продолжение саги о пустынной планете Арракис. Пол Атрейдес объединяется с фременами, чтобы отомстить Дому Харконненов и восстановить справедливость.</p>
+                                    <a href="404.html" class="featured-btn">Читать рецензии</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="featured-card">
+                                <div class="featured-poster"><img src="ImageFolder/oppenheimer.jpg" alt="Постер фильма Оппенгеймер"></div>
+                                <div class="featured-info">
+                                    <h3>Оппенгеймер</h3>
+                                    <div class="featured-meta">2023 | Кристофер Нолан | Биография / Драма</div>
+                                    <div class="featured-rating">★ 8.7</div>
+                                    <p>История Роберта Оппенгеймера — гениального физика, создавшего атомную бомбу.</p>
+                                    <a href="404.html" class="featured-btn">Читать рецензии</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="featured-card">
+                                <div class="featured-poster"><img src="ImageFolder/joker.jpg" alt="Постер фильма Джокер"></div>
+                                <div class="featured-info">
+                                    <h3>Джокер</h3>
+                                    <div class="featured-meta">2019 | Тодд Филлипс | Триллер / Драма</div>
+                                    <div class="featured-rating">★ 8.5</div>
+                                    <p>Психологическая драма о становлении культового злодея.</p>
+                                    <a href="404.html" class="featured-btn">Читать рецензии</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="featured-card">
+                                <div class="featured-poster"><img src="ImageFolder/inception.jpg" alt="Постер фильма Начало"></div>
+                                <div class="featured-info">
+                                    <h3>Начало</h3>
+                                    <div class="featured-meta">2010 | Кристофер Нолан | Фантастика / Боевик</div>
+                                    <div class="featured-rating">★ 8.8</div>
+                                    <p>Кобб — лучший вор, способный проникать в чужие сны.</p>
+                                    <a href="404.html" class="featured-btn">Читать рецензии</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="featured-card">
+                                <div class="featured-poster"><img src="ImageFolder/parasites.jpg" alt="Постер фильма Паразиты"></div>
+                                <div class="featured-info">
+                                    <h3>Паразиты</h3>
+                                    <div class="featured-meta">2019 | Пон Джун Хо | Драма / Триллер</div>
+                                    <div class="featured-rating">★ 8.6</div>
+                                    <p>Семья безработных постепенно проникает в дом богатых.</p>
+                                    <a href="404.html" class="featured-btn">Читать рецензии</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <label for="slide1" class="dot"></label>
+                    <label for="slide2" class="dot"></label>
+                    <label for="slide3" class="dot"></label>
+                    <label for="slide4" class="dot"></label>
+                    <label for="slide5" class="dot"></label>
+                </div>
+            </div>
+            
+            <div class="movies-section">
+                <h2 class="section-title">Все фильмы</h2>
+                   <div class="movies-grid">
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/oppenheimer.jpg" alt="Постер фильма Оппенгеймер" title="Оппенгеймер"></div><div class="movie-content"><h3>Оппенгеймер</h3><div class="movie-year">2023</div><div class="movie-rating">★ 8.7</div><p>Биографическая драма Нолана</p><a href="#" class="movie-link" title="Рецензии на Оппенгеймер">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/barbie.jpg" alt="Постер фильма Барби" title="Барби"></div><div class="movie-content"><h3>Барби</h3><div class="movie-year">2023</div><div class="movie-rating">★ 7.2</div><p>Ироничная комедия Греты Гервиг</p><a href="#" class="movie-link" title="Рецензии на Барби">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/dune.jpg" alt="Постер фильма Дюна 2" title="Дюна 2"></div><div class="movie-content"><h3>Дюна 2</h3><div class="movie-year">2024</div><div class="movie-rating">★ 8.9</div><p>Эпическая фантастика Вильнёва</p><a href="#" class="movie-link" title="Рецензии на Дюну">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/joker.jpg" alt="Постер фильма Джокер" title="Джокер"></div><div class="movie-content"><h3>Джокер</h3><div class="movie-year">2019</div><div class="movie-rating">★ 8.5</div><p>Психологическая драма</p><a href="#" class="movie-link" title="Рецензии на Джокера">Рецензии →</a></div></div>
+                    
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/inception.jpg" alt="Постер фильма Начало" title="Начало"></div><div class="movie-content"><h3>Начало</h3><div class="movie-year">2010</div><div class="movie-rating">★ 8.8</div><p>Триллер о мире снов</p><a href="#" class="movie-link" title="Рецензии на Начало">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/parasites.jpg" alt="Постер фильма Паразиты" title="Паразиты"></div><div class="movie-content"><h3>Паразиты</h3><div class="movie-year">2019</div><div class="movie-rating">★ 8.6</div><p>Социальная драма</p><a href="#" class="movie-link" title="Рецензии на Паразитов">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/interstellar.jpg" alt="Постер фильма Интерстеллар" title="Интерстеллар"></div><div class="movie-content"><h3>Интерстеллар</h3><div class="movie-year">2014</div><div class="movie-rating">★ 8.6</div><p>Космическая одиссея</p><a href="#" class="movie-link" title="Рецензии на Интерстеллар">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/matrix.jpg" alt="Постер фильма Матрица" title="Матрица"></div><div class="movie-content"><h3>Матрица</h3><div class="movie-year">1999</div><div class="movie-rating">★ 8.7</div><p>Культовая фантастика</p><a href="#" class="movie-link" title="Рецензии на Матрицу">Рецензии →</a></div></div>
+                    
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/forrest.jpg" alt="Постер фильма Форрест Гамп" title="Форрест Гамп"></div><div class="movie-content"><h3>Форрест Гамп</h3><div class="movie-year">1994</div><div class="movie-rating">★ 8.9</div><p>История жизни</p><a href="#" class="movie-link" title="Рецензии на Форреста Гампа">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/greenbook.jpg" alt="Постер фильма Зеленая книга" title="Зеленая книга"></div><div class="movie-content"><h3>Зеленая книга</h3><div class="movie-year">2018</div><div class="movie-rating">★ 8.4</div><p>История о дружбе</p><a href="#" class="movie-link" title="Рецензии на Зеленую книгу">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/1917.jpg" alt="Постер фильма 1917" title="1917"></div><div class="movie-content"><h3>1917</h3><div class="movie-year">2019</div><div class="movie-rating">★ 8.3</div><p>Военная драма</p><a href="#" class="movie-link" title="Рецензии на 1917">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/johnwick.jpg" alt="Постер фильма Джон Уик" title="Джон Уик"></div><div class="movie-content"><h3>Джон Уик</h3><div class="movie-year">2014</div><div class="movie-rating">★ 7.9</div><p>Экшн про киллера</p><a href="#" class="movie-link" title="Рецензии на Джона Уика">Рецензии →</a></div></div>
+                    
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/gladiator.jpg" alt="Постер фильма Гладиатор" title="Гладиатор"></div><div class="movie-content"><h3>Гладиатор</h3><div class="movie-year">2000</div><div class="movie-rating">★ 8.5</div><p>Эпическая история</p><a href="#" class="movie-link" title="Рецензии на Гладиатора">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/darkknight.jpg" alt="Постер фильма Темный рыцарь" title="Темный рыцарь"></div><div class="movie-content"><h3>Темный рыцарь</h3><div class="movie-year">2008</div><div class="movie-rating">★ 9.0</div><p>Лучший фильм о Бэтмене</p><a href="#" class="movie-link" title="Рецензии на Темного рыцаря">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/pulpfiction.jpg" alt="Постер фильма Криминальное чтиво" title="Криминальное чтиво"></div><div class="movie-content"><h3>Криминальное чтиво</h3><div class="movie-year">1994</div><div class="movie-rating">★ 8.6</div><p>Шедевр Тарантино</p><a href="#" class="movie-link" title="Рецензии на Криминальное чтиво">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/fightclub.jpg" alt="Постер фильма Бойцовский клуб" title="Бойцовский клуб"></div><div class="movie-content"><h3>Бойцовский клуб</h3><div class="movie-year">1999</div><div class="movie-rating">★ 8.6</div><p>Культовый фильм</p><a href="#" class="movie-link" title="Рецензии на Бойцовский клуб">Рецензии →</a></div></div>
+                    
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/shawshank.jpg" alt="Постер фильма Побег из Шоушенка" title="Побег из Шоушенка"></div><div class="movie-content"><h3>Побег из Шоушенка</h3><div class="movie-year">1994</div><div class="movie-rating">★ 9.1</div><p>Лучший фильм всех времен</p><a href="#" class="movie-link" title="Рецензии на Побег из Шоушенка">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/greenmile.jpg" alt="Постер фильма Зеленая миля" title="Зеленая миля"></div><div class="movie-content"><h3>Зеленая миля</h3><div class="movie-year">1999</div><div class="movie-rating">★ 8.9</div><p>Душераздирающая драма</p><a href="#" class="movie-link" title="Рецензии на Зеленую милю">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/leon.jpg" alt="Постер фильма Леон" title="Леон"></div><div class="movie-content"><h3>Леон</h3><div class="movie-year">1994</div><div class="movie-rating">★ 8.7</div><p>История киллера</p><a href="#" class="movie-link" title="Рецензии на Леона">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/whiplash.jpg" alt="Постер фильма Одержимость" title="Одержимость"></div><div class="movie-content"><h3>Одержимость</h3><div class="movie-year">2014</div><div class="movie-rating">★ 8.5</div><p>Драма о музыке</p><a href="#" class="movie-link" title="Рецензии на Одержимость">Рецензии →</a></div></div>
+                    
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/socialnetwork.jpg" alt="Постер фильма Социальная сеть" title="Социальная сеть"></div><div class="movie-content"><h3>Социальная сеть</h3><div class="movie-year">2010</div><div class="movie-rating">★ 8.2</div><p>История Facebook</p><a href="#" class="movie-link" title="Рецензии на Социальную сеть">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/gonegirl.jpg" alt="Постер фильма Исчезнувшая" title="Исчезнувшая"></div><div class="movie-content"><h3>Исчезнувшая</h3><div class="movie-year">2014</div><div class="movie-rating">★ 8.1</div><p>Психологический триллер</p><a href="#" class="movie-link" title="Рецензии на Исчезнувшую">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/madmax.jpg" alt="Постер фильма Безумный Макс" title="Безумный Макс"></div><div class="movie-content"><h3>Безумный Макс</h3><div class="movie-year">2015</div><div class="movie-rating">★ 8.0</div><p>Постапокалиптический экшн</p><a href="#" class="movie-link" title="Рецензии на Безумного Макса">Рецензии →</a></div></div>
+                    <div class="movie-card"><div class="movie-poster"><img src="ImageFolder/lalaland.jpg" alt="Постер фильма Ла-Ла Ленд" title="Ла-Ла Ленд"></div><div class="movie-content"><h3>Ла-Ла Ленд</h3><div class="movie-year">2016</div><div class="movie-rating">★ 8.0</div><p>Романтический мюзикл</p><a href="#" class="movie-link" title="Рецензии на Ла-Ла Ленд">Рецензии →</a></div></div>
+                </div>
+            </div>
+            
+            <div class="about-section">
+                <h2 class="section-title">О проекте</h2>
+                <div class="about-card">
+                    <p><strong>КиноКрит</strong> — независимое сообщество кинокритиков. Мы публикуем рецензии двух типов: <strong>«До просмотра»</strong> (без спойлеров) и <strong>«После просмотра»</strong> (глубокий разбор).</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+       <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-col">
+                    <h4>КиноКрит</h4>
+                    <p>Рецензии до и после просмотра</p>
+                    <p>© 2026 Марк Грицев</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="404.html">Фильмы</a></li>
+                        <li><a href="404.html">Критики</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="aboutme.html">О разработчике</a></li>
+                        <li><a href="confid.html">Политика конфиденциальности</a></li>
+                        <li><a href="sitemap.html">Карта сайта</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📧 markgritsev8@gmail.com</p>
+                    <p>📞 +375 (25) 516-88-28</p>
+                    <p><a href="https://www.bartc.by">Официальный сайт БТК</a></p>
+                </div>
+            </div>
+        </footer>
+</div>
+<input type="checkbox" id="authModalToggle" style="display: none;">
+<input type="radio" name="authTab" id="tabLogin" class="auth-tab-input" checked>
+<input type="radio" name="authTab" id="tabRegister" class="auth-tab-input">
+
+<div class="auth-modal">
+    <div class="golden-ticket">
+       <div class="golden-ticket">
+      
+
+    <div class="ticket-inner">
+        ...
+    </div>
+</div>
+        
+        <div class="film-notch top-notch"></div>
+        <div class="film-notch bottom-notch"></div>
+        
+        <div class="ticket-inner">
+            <div class="ticket-header">
+                <h3>КИНОКРИТ</h3>
+                <div class="ticket-gold-line"></div>
+                <label for="authModalToggle" class="ticket-close">✕</label>
+            </div>
+            
+            <div class="ticket-tabs">
+                <label for="tabLogin" class="tab-btn">ВХОД</label>
+                <label for="tabRegister" class="tab-btn">РЕГИСТРАЦИЯ</label>
+                <div class="tab-slider"></div>
+            </div>
+            
+            
+            <form action="404.html" method="get" class="auth-form login-form">
+                <div class="film-frame">
+                    <div class="input-group">
+                        <input type="text" id="loginName" required>
+                        <label>Логин</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="password" id="loginPass" required>
+                        <label>Пароль</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <button type="submit" class="ticket-btn">
+                        <span>ПОЛУЧИТЬ БИЛЕТ</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </form>
+            
+            
+            <form action="404.html" method="get" class="auth-form register-form">
+                <div class="film-frame">
+                    <div class="input-group">
+                        <input type="text" id="regNickname" required>
+                        <label>Никнейм</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="password" id="regPass" required>
+                        <label>Пароль</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="password" id="regConfirm" required>
+                        <label>Подтверждение</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <div class="genres-block">
+                        <span class="genres-title">ЛЮБИМЫЕ ЖАНРЫ</span>
+                       <div class="genres-grid">
+    <label class="genre-chip"><input type="checkbox"><span>Боевик</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Драма</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Комедия</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Фантастика</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Триллер</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Ужасы</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Мелодрама</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Криминал</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Приключения</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Аниме</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Детектив</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Вестерн</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Нуар</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Мюзикл</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Спорт</span></label>
+    <label class="genre-chip"><input type="checkbox"><span>Биография</span></label>
+</div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="text" id="favFilm" placeholder=" ">
+                        <label>Любимый фильм</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <div class="terms-check">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Согласен с правилами</label>
+                    </div>
+                    
+                    <button type="submit" class="ticket-btn">
+                        <span>ЗАБРОНИРОВАТЬ</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </form>
+            
+            <div class="ticket-footer">
+                <div class="ticket-code">✦ 2025 KINOCRIT ✦</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
